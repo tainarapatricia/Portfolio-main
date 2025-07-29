@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Olá, meu nome é Thainara e sou UX Design e Desenvolvedora Front-End na Empresa Grupo Boticário.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logoPortifolio.svg" type="image/x-icon">
+    <title>Portifólio Thainara Rodrigues</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="elipse-rosa"></div>
+    <div class="elipse-rosa2"></div>
+    <div class="elipse-rosa3"></div>
+    <div class="elipse-rosa4"></div>
+    <div class="elipse-rosa-perfil"></div>
+    <div class="elipse-rosa-perfil2"></div>
+    <!-- cabeçalho -->
+    <header class="cabecalho">
+        <img class="cabecalho-logo" src="./img/logoPortifolio.svg" alt="Logo do Portfólio da Thainara Rodrigues">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="#estudo-de-caso">Estudo de Caso</a>
+            <a class="cabecalho-menu-item text-pink" href="#sobre-mim">Sobre Mim</a>
+            <a class="cabecalho-menu-item" href="#vamos-conversar">Vamos Conversar!</a>
+        </nav>
+    </header>
+
+    <!-- corpo  -->
+    <main class="tela-principal">
+        <!-- Tela Principal -->
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">UI/UX Design</h1>
+                <h2 class="conteudo-principal-escrito-apresentação">Olá, Eu sou a Thainara Rodrigues</h2>
+                <div class="traco"></div>
+            </div>
+            <div class="conteudo-secundario">
+                <div class="traco2"></div>
+                <p class="conteudo-secundario-descrição"> Crio produtos digitais inclusivos e ascessíveis. Acredito no
+                    uso do design de produto como
+                    uma ferramenta para elevar a interação humana com a tecnologia e reforçar a criação de empatia
+                    pelo usuário ao longo do processo.</p>
+            </div>
+        </section>
+
+        <!-- Estudos de Casos -->
+        <section class="conteudo-terciario" >
+            <div class="circulo"></div>
+            <div class="circulo2"></div>
+            <div class="traco3"  id="estudo-de-caso"></div>
+            <h2 class="conteudo-terciario-titulo" >Estudo de Casos </h2>
+
+            <button id="back-button"><img src="img/icons8-avançar-60.png" alt="back-button"> </button>
+
+            <div class="conteudo-terciario-grid-1">
+                <img class="conteudo-terciario-grid-imagem-1" src="img/printCarrinhoFloricultura.svg"
+                    alt="Tela de Carrinho do Aplicativo Floricultura Online">
+                <img class="conteudo-terciario-grid-imagem-2" src="img/printTelaInicialFloricultura.svg"
+                    alt="Tela Inicial do Aplicativo Floricultura Online">
+                <h3 class="conteudo-terciario-grid-subtitulo-1">Floricultura Online</h3>
+                <p class="conteudo-terciario-grid-paragrafo-1">Projeto do Curso:  Google UX Design <br> Aplicativo de uma Loja de Floricultura Local</p>
+                <button onclick="irParaFloricultura()" class="conteudo-terciario-grid-botao-1">Ver Projeto</button>
+            </div>
+
+            <div class="conteudo-terciario-grid-2">
+                <img class="conteudo-terciario-grid-imagem-3" src="img/printTelaInicialSEKIB.svg"
+                    alt="Tela Inicial do Site da SEKIB">
+                <h3 class="conteudo-terciario-grid-subtitulo-2">Site SEKIB</h3>
+                <p class="conteudo-terciario-grid-paragrafo-2">Projeto do Curso:  Google UX Design <br> Site Responsivo de uma Loja de Bicicletas Personalizáveis </p>
+                <button onclick="irParaSEKIB()" class="conteudo-terciario-grid-botao-2">Ver Projeto</button>
+            </div>
+
+            <div class="conteudo-terciario-grid-3">
+                <img class="conteudo-terciario-grid-imagem-3" src="img/dr. rozana.png"
+                    alt="Landing Page Dr. Rozana">
+                <h3 class="conteudo-terciario-grid-subtitulo-2">Landing Page Dr. Rozana </h3>
+                <p class="conteudo-terciario-grid-paragrafo-2">Site Responsivo de Cartão de Visita </p>
+                <button onclick="irParaDrRozana()" class="conteudo-terciario-grid-botao-2">Ver Projeto</button>
+            </div>
+
+             <div class="conteudo-terciario-grid-4">
+                <img class="conteudo-terciario-grid-imagem-1" src="img/gooday-inicio-removebg-preview.png"
+                    alt="Tela Inicial do Aplicativo Gooday">
+                <img class="conteudo-terciario-grid-imagem-2" src="img/gooday-perfil-removebg-preview.png"
+                    alt="Tela de Perfil do Aplicativo Gooday">
+                <h3 class="conteudo-terciario-grid-subtitulo-2">Aplicativo Gooday </h3>
+                <p class="conteudo-terciario-grid-paragrafo-2"> Projeto do Curso:  Pro Figma <br> UI Design do Aplicativo de Rede Social Voltado para Público Fitness </p>
+                <button onclick="irParaGooday()" class="conteudo-terciario-grid-botao-2">Ver Projeto</button>
+            </div>
+
+            <button id="next-button"><img src="img/icons8-avançar-60.png" alt="next-button"> </button>
+
+        </section>
+
+        <!-- Sobre Mim -->
+        <section class="conteudo-sobre-mim" id="sobre-mim">
+            <div class="z-container">
+                <div class="parallelogram one">
+
+                    <div class="content">
+                        <div class="sobre-mim-esquerdo">
+                            <img class="foto-de-perfil" src="img/Avatar.png" alt="Foto de Perfil da Thainara">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="traco4"></div>
+                <div class="parallelogram two">
+                    <div class="content">
+                        <div class="container-titulo">
+                            <h2 class="sobre-mim-titulo">Sobre Mim</h2>
+                        </div>
+                        <p class="sobre-mim-paragrafo">Meu nome é Thainara Rodrigues, sou designer de UX/UI e moro no Rio de Janeiro.
+                            Sou apaixonada por criar interfaces funcionais, intuitivas e visualmente atraentes, sempre com foco em oferecer a melhor experiência possível para todos os usuários. 
+                            Acredito que um bom design é aquele que une criatividade, empatia e usabilidade para resolver problemas reais..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                
+                <div class="linha-sobre-mim">
+                    <span></span>
+                </div>
+                <div class="linha-sobre-mim-2">
+                    <span></span>
+                </div>
+                <div class="sobre-mim-direito">
+
+                </div>
+            </div>
+            <div class="sobre-mim-2">
+                <div class="linha-vertical"></div>
+                <p class="sobre-mim-paragrafo-2">Atualmente atuo como Data Fabric Tec III no Grupo Boticário, onde sou responsável por analisar e resolver problemas relacionados a bancos de dados.
+                Estou em transição de carreira para a área de UX/UI Design, pela qual sou profundamente apaixonada. Tenho me dedicado à especialização por meio de cursos, projetos práticos e trabalhos autônomos, aplicando meus conhecimentos e fortalecendo minha atuação na área.<br> <br> <br>
+
+                Meu maior diferencial está em desenvolver soluções centradas no usuário, priorizando experiências que sejam intuitivas, acessíveis, eficientes e agradáveis. Acredito que um bom design vai além da estética — ele resolve problemas reais e gera valor para as pessoas.
+                </p>
+            </div>
+            <div class="estrela"></div>
+        </section>
+
+
+    </main>
+
+    <!-- rodapé -->
+    <footer id="vamos-conversar">
+        
+        <div class="conteudo-quaternario-contato">
+            <div class="box-contato">
+                <img class="conteudo-quaternario-informacoes" src="img/iconeTel.svg" alt="Icone do Telefone"> <h3 class="texto-telefone">(31) 99446-6868</h3>
+            </div>
+            <div class="box-contato">
+                <img class="conteudo-quaternario-informacoes" src="img/iconeEmail.jpg.svg"> <h3 class="texto-email">tainara1921@live.com</h3>
+            </div>          
+        </div>
+
+        <div class="conteudo-quaternario-redes-sociais">
+            <div class="redes-sociais-subtitulo">
+                <h3 class="conteudo-quaternario-subtitulo">Redes Sociais </h3>
+            </div>
+        
+            <div class="icones-redes-sociais">
+                <a href="https://www.linkedin.com/in/thainara-patricia-campos-rodrigues/">
+                    <img class="conteudo-quaternario-icone" src="img/iconeLinkedin.svg" alt="Icone do Linkedin" >
+                </a>
+                <a href="https://www.facebook.com/thaipatricia.rodrigues/">
+                    <img class="conteudo-quaternario-icone" src="img/iconeFace.svg" alt="Icone do Facebook">
+                </a>
+                <a href="https://www.instagram.com/thaipatricia/">
+                    <img class="conteudo-quaternario-icone" src="img/iconeInsta.svg" alt="Icone do Instagram">
+                </a>          
+            </div>
+           
+        </div>
+
+        <div class="whatsapp">
+            <!-- <div class="elipse-rosa-whatsapp"></div> -->
+            <h3 class="whatsapp-subtitulo">Me Mande uma Mensagem</h3>
+            <button class="botao-whatsapp" onclick="openWhatsApp()">Whatsapp 
+                <div class="elipse-rosa-whatsapp"></div>
+                <img class="icone-whatsapp" src="img/whatsapp (3).png" alt="Ícone do Whatsapp">
+            </button>
+    
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
