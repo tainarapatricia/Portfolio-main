@@ -8,6 +8,7 @@
         content="Olá, meu nome é Thainara e sou UX Design e Desenvolvedora Front-End na Empresa Grupo Boticário.">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/logoPortifolio.svg" type="image/x-icon">
+
     <title>Portifólio Thainara Rodrigues</title>
 
     <style>
@@ -50,6 +51,7 @@
             </div>
         </section>
 
+
         <!-- Estudos de Casos -->
         <section class="conteudo-terciario" >
             <div class="circulo"></div>
@@ -57,21 +59,12 @@
             <div class="traco3"  id="estudo-de-caso"></div>
             <h2 class="conteudo-terciario-titulo" >Estudo de Casos </h2>
 
-            <button id="back-button"><img src="img/icons8-avançar-60.png" alt="back-button"> </button>
+            <button id="back-button"><img src="img/icons8-avançar-60.png" alt="Voltar"></button>
 
-            <div class="conteudo-terciario-grid-1">
-                <img class="conteudo-terciario-grid-imagem-1" src="img/printCarrinhoFloricultura.svg"
-                    alt="Tela de Carrinho do Aplicativo Floricultura Online">
-                <img class="conteudo-terciario-grid-imagem-2" src="img/printTelaInicialFloricultura.svg"
-                    alt="Tela Inicial do Aplicativo Floricultura Online">
-                <h3 class="conteudo-terciario-grid-subtitulo-1">Floricultura Online</h3>
-                <p class="conteudo-terciario-grid-paragrafo-1">Projeto do Curso:  Google UX Design <br> Aplicativo de uma Loja de Floricultura Local</p>
-                <button onclick="irParaFloricultura()" class="conteudo-terciario-grid-botao-1">Ver Projeto</button>
-            </div>
 
             <div class="conteudo-terciario-grid-2">
-                <img class="conteudo-terciario-grid-imagem-3" src="img/printTelaInicialSEKIB.svg"
-                    alt="Tela Inicial do Site da SEKIB">
+                <img class="conteudo-terciario-grid-imagem-3" src="img/sekib-pc-removebg-preview.png"
+                    alt="Tela Site da SEKIB">
                 <h3 class="conteudo-terciario-grid-subtitulo-2">Site SEKIB</h3>
                 <p class="conteudo-terciario-grid-paragrafo-2">Projeto do Curso:  Google UX Design <br> Site Responsivo de uma Loja de Bicicletas Personalizáveis </p>
                 <button onclick="irParaSEKIB()" class="conteudo-terciario-grid-botao-2">Ver Projeto</button>
@@ -95,7 +88,18 @@
                 <button onclick="irParaGooday()" class="conteudo-terciario-grid-botao-2">Ver Projeto</button>
             </div>
 
-            <button id="next-button"><img src="img/icons8-avançar-60.png" alt="next-button"> </button>
+            <div class="conteudo-terciario-grid-1">
+                <img class="conteudo-terciario-grid-imagem-1" src="img/floricultura-inicio-removebg-preview.png"
+                    alt="Tela de Carrinho do Aplicativo Floricultura Online">
+                <img class="conteudo-terciario-grid-imagem-2" src="img/floricultura-produto-removebg-preview.png"
+                    alt="Tela Inicial do Aplicativo Floricultura Online">
+                <h3 class="conteudo-terciario-grid-subtitulo-1">Floricultura Online</h3>
+                <p class="conteudo-terciario-grid-paragrafo-1">Projeto do Curso:  Google UX Design <br> Aplicativo de uma Loja de Floricultura Local</p>
+                <button onclick="irParaFloricultura()" class="conteudo-terciario-grid-botao-1">Ver Projeto</button>
+            </div>
+
+
+            <button id="next-button"><img src="img/icons8-avançar-60.png" alt="Avançar"></button>
 
         </section>
 
@@ -195,6 +199,57 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+
+    <!--Carrocel-->
+
+
+    <script>
+        const cards = [
+            document.querySelector('.conteudo-terciario-grid-1'),
+            document.querySelector('.conteudo-terciario-grid-2'),
+            document.querySelector('.conteudo-terciario-grid-3'),
+            document.querySelector('.conteudo-terciario-grid-4')
+        ];
+
+        let currentIndex = 0;
+
+        function mostrarCards(index) {
+            cards.forEach((card, i) => {
+            if (i === index || i === index + 1) {
+                card.classList.add('card-visivel');
+            } else {
+                card.classList.remove('card-visivel');
+            }
+            });
+        }
+
+        document.getElementById('next-button').addEventListener('click', () => {
+            if (currentIndex + 2 < cards.length) {
+            currentIndex += 2;
+            mostrarCards(currentIndex);
+            }
+        });
+
+        document.getElementById('back-button').addEventListener('click', () => {
+            if (currentIndex - 2 >= 0) {
+            currentIndex -= 2;
+            mostrarCards(currentIndex);
+            }
+        });
+
+        // Mostrar os dois primeiros cards no início
+        mostrarCards(currentIndex);
+    </script>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

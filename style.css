@@ -260,7 +260,7 @@ tela-principal {
 #next-button{
     position: relative;
     top: 180px;
-    left: 1175px;
+    left: 1190px;
 
 }
 
@@ -387,7 +387,6 @@ tela-principal {
 }
 
 
-
 .conteudo-terciario-grid-2 {
     display: grid;
     background-color: white;
@@ -398,7 +397,6 @@ tela-principal {
     padding-top: 300px;
     top: 750px;
     border-radius: 20px;
-    
 
 }
 
@@ -411,6 +409,9 @@ tela-principal {
     top: 40px;
     z-index: 100;
 }
+
+
+
 
 .conteudo-terciario-grid-subtitulo-2 {
     font-weight: 700;
@@ -449,7 +450,7 @@ tela-principal {
     width: 460px;
     height: 440px;
     position: absolute;
-    left: 1250px;
+    left: 730px;
     padding-top: 300px;
     top: 750px;
     border-radius: 20px;
@@ -819,3 +820,27 @@ footer {
     transform: matrix(-0.99, 0.10, -0, -1.5, 0, 0);
     
 }
+
+
+
+
+/* Oculta os cards que não estão visíveis */
+.conteudo-terciario-grid-1,
+.conteudo-terciario-grid-2,
+.conteudo-terciario-grid-3,
+.conteudo-terciario-grid-4 {
+  display: none;
+}
+
+/* O card visível recebe essa classe */
+.card-visivel {
+  display: grid !important;
+}
+
+
+
+
+
+
+
+
