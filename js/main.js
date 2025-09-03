@@ -11,20 +11,20 @@ function openWhatsApp() {
 
 //PDF floricultura
 function irParaFloricultura(){
-    window.open("file:///C:/Users/taina/OneDrive/Documentos/Portfolio-main/docs/Floricultura-Online.pdf")
+    window.open("https://1drv.ms/b/c/9391a66519515486/EShiLy9sHCBNhRUoS1rgd8gBh5p1kCIW9EaznUOuMwcb-A?e=wUjPUP")
 
 }
 
 //PDF sekib
 function irParaSEKIB(){
-    window.open("file:///C:/Users/taina/OneDrive/Documentos/Portfolio-main/docs/SEKIB.pdf")
+    window.open("https://1drv.ms/b/c/9391a66519515486/EeaSiFxj-KRGgPllsYq1wcwBT1GQ3IxBZhhwIRloYK-d_g?e=szvUDy")
 
 }
 
 // Site Dr. Rozana
 
 function irParaDrRozana(){
-  window.open("https://landing-page-dr-rozana.vercel.app/#sobre")
+  window.open("https://landing-page-dr-rozana.vercel.app/")
 }
 
 // Aplicativo Gooday
