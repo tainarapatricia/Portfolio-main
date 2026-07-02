@@ -53,7 +53,7 @@ body {
     opacity: 0.5;
     filter: blur(158.333px);
     transform: matrix(-0.36, 0.93, -0.06, -1, 0, 0);
-    
+
 }
 
 .elipse-rosa2 {
@@ -100,7 +100,8 @@ body {
     border-radius: 50%;
     transform: matrix(-0.36, 0.93, -0.06, -1, 0, 0);
 }
-.elipse-rosa-perfil{
+
+.elipse-rosa-perfil {
     border-radius: 100%;
     position: absolute;
     width: 300.90px;
@@ -111,11 +112,12 @@ body {
     background: rgba(232, 143, 212, 0.5);
     filter: blur(9px);
 }
-.elipse-rosa-perfil2{
+
+.elipse-rosa-perfil2 {
     border-radius: 100%;
     position: absolute;
     width: 370.90px;
-    height:370.90px;
+    height: 370.90px;
     opacity: 0.5;
     top: 1350px;
     left: 160px;
@@ -160,9 +162,7 @@ body {
 
 /* Começo do corpo */
 
-tela-principal {
-
-}
+tela-principal {}
 
 .conteudo-principal {
     display: flex;
@@ -241,7 +241,8 @@ tela-principal {
 
 /*Setas do Carrocel*/
 
-#back-button, #next-button{
+#back-button,
+#next-button {
     width: 30px;
     height: 30px;
     border: none;
@@ -250,14 +251,14 @@ tela-principal {
     position: relative;
 }
 
-#back-button{
+#back-button {
     transform: rotate(180deg);
     position: relative;
     top: 210px;
     left: 175px;
 }
 
-#next-button{
+#next-button {
     position: relative;
     top: 180px;
     left: 1190px;
@@ -535,7 +536,7 @@ tela-principal {
 
 .conteudo-terciario-grid-imagem-2 {
     width: 124px;
-    height: 230px;  
+    height: 230px;
     position: absolute;
     top: 60px;
     left: 200px;
@@ -587,7 +588,7 @@ tela-principal {
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
 
 .content {
@@ -598,8 +599,8 @@ tela-principal {
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding-top: 40px;
-    position: relative;
+    padding-top: -55px;
+
 }
 
 .one {
@@ -643,7 +644,7 @@ tela-principal {
 .sobre-mim-direito {
     /* position: relative; */
     top: 910px;
-    right: 140px;
+    right: 90px;
 
 }
 
@@ -660,12 +661,12 @@ tela-principal {
 
 .sobre-mim-paragrafo {
     text-align: justify;
-    width: 250px;
+    width: 350px;
     height: 440px;
     display: inline-block;
-    left: 770px;
-    margin-top: 120px;
-    margin-left: -30px;
+    margin-top: 20px;
+    margin-left: -135px;
+
 }
 
 
@@ -776,17 +777,19 @@ footer {
 
 /* Whatsapp */
 
-.whatsapp{
+.whatsapp {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 25px;
 }
-.whatsapp-subtitulo{
+
+.whatsapp-subtitulo {
     font-weight: 400;
     padding-right: 60px;
     padding-top: 100px;
 }
+
 .botao-whatsapp {
     font-family: "Manrope", sans-serif;
     border: #E88FD4 solid 1.5px;
@@ -802,14 +805,16 @@ footer {
     margin-left: -70px;
     background-color: white;
     cursor: pointer;
-   
+
 }
-.icone-whatsapp{
+
+.icone-whatsapp {
     width: 32px;
     height: 32px;
-    gap:30px;
+    gap: 30px;
 }
-.elipse-rosa-whatsapp{
+
+.elipse-rosa-whatsapp {
     position: absolute;
     z-index: 10;
     width: 104.91px;
@@ -818,7 +823,7 @@ footer {
     opacity: 0.5;
     filter: blur(17.333px);
     transform: matrix(-0.99, 0.10, -0, -1.5, 0, 0);
-    
+
 }
 
 
@@ -829,18 +834,10 @@ footer {
 .conteudo-terciario-grid-2,
 .conteudo-terciario-grid-3,
 .conteudo-terciario-grid-4 {
-  display: none;
+    display: none;
 }
 
 /* O card visível recebe essa classe */
 .card-visivel {
-  display: grid !important;
+    display: grid !important;
 }
-
-
-
-
-
-
-
-
