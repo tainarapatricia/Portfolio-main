@@ -239,6 +239,37 @@ tela-principal {}
 
 /* Estudo de Casos */
 
+/* Botão voltar ao topo */
+#btnTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #E88FD4, #C86DD7);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(232, 143, 212, 0.4);
+    display: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#btnTopo:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 12px 30px rgba(232, 143, 212, 0.6);
+}
+
+#btnTopo:active {
+    transform: scale(0.95);
+}
+
+
+
 /*Setas do Carrocel*/
 
 #back-button,
@@ -349,9 +380,17 @@ tela-principal {}
     border-radius: 24px;
     font-size: 8pt;
     height: 29px;
-    background-color: white;
+    background-color: #E88FD4;
     cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.conteudo-terciario-grid-botao-2:hover {
+    background-color: #E88FD4;
+    color: #ffffff;
+}
+
+
 
 .conteudo-terciario-grid-subtitulo-1 {
     font-weight: 700;
@@ -436,8 +475,13 @@ tela-principal {}
     border-radius: 24px;
     font-size: 8pt;
     height: 29px;
-    background-color: white;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.conteudo-terciario-grid-botao-2:hover {
+    background-color: #E88FD4;
+    color: #ffffff;
 }
 
 
@@ -484,15 +528,24 @@ tela-principal {}
     position: relative;
     width: 90px;
     left: 35px;
+    font: bolder;
     border: 1px solid #E88FD4;
-    color: #E88FD4;
+    color: #E88FD4(0, 0, 0);
     font-weight: 400;
     border-radius: 24px;
     font-size: 8pt;
     height: 29px;
-    background-color: white;
+    background-color: #ffffff;
     cursor: pointer;
+    transition: 0.3s ease;
 }
+
+
+.conteudo-terciario-grid-botao-2:hover {
+    background-color: #E88FD4;
+    color: #ffffff;
+}
+
 
 
 /* Grid da Aplicativo Gooday */
@@ -555,7 +608,14 @@ tela-principal {}
     height: 29px;
     background-color: white;
     cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.conteudo-terciario-grid-botao-1:hover {
+    background-color: #E88FD4;
+    color: #ffffff;
+}
+
 
 .conteudo-terciario-grid-subtitulo-1 {
     font-weight: 700;
